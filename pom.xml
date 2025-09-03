@@ -10,8 +10,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Windows Console Unicode Output</name>
-    <description>Utility to enable Unicode console output on Windows using FFM API</description>
+    <description>Utility to enable Unicode console output on Windows using FFM API (same in effect as `chcp 65001`)</description>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
@@ -28,9 +27,6 @@
                 <configuration>
                     <source>22</source>
                     <target>22</target>
-                    <compilerArgs>
-                        <arg>--enable-preview</arg>
-                    </compilerArgs>
                 </configuration>
             </plugin>
 
@@ -39,7 +35,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <argLine>--enable-native-access=xyz.jphil.windows_console_set_unicode_output --enable-preview</argLine>
+                    <systemPropertyVariables>
+                        <jdk.native.access>xyz.jphil.windows_console_set_unicode_output</jdk.native.access>
+                    </systemPropertyVariables>
+                    <argLine>--enable-native-access=xyz.jphil.windows_console_set_unicode_output</argLine>
                 </configuration>
             </plugin>
 
@@ -50,7 +49,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Enable-Native-Access>xyz.jphil.windows_console_set_unicode_output</Enable-Native-Access>
+                            <Enable-Native-Access>ALL-UNNAMED</Enable-Native-Access> <!-- documentation says no other value is allowed here -->
                         </manifestEntries>
                     </archive>
                 </configuration>

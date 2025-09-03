@@ -13,7 +13,7 @@ import static java.lang.foreign.ValueLayout.*;
  * 
  * <p>What it does:</p>
  * <ol>
- * <li>Sets Windows console output code page to UTF-8 (65001)</li>
+ * <li>Sets Windows console output code page to UTF-8 (65001), similar to `chcp 65001` command</li>
  * <li>Resets Java's System.out to use UTF-8 encoding</li>
  * </ol>
  * 
