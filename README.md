@@ -200,7 +200,7 @@ module xyz.jphil.windows_console_set_unicode_output {
 }
 ```
 
-The JAR manifest includes `Enable-Native-Access` for this specific module, providing secure native access without requiring `--enable-native-access=ALL-UNNAMED`.
+The JAR manifest includes `Enable-Native-Access: ALL-UNNAMED` (the only supported value for manifest entries). For specific module access, use the command line option `--enable-native-access=xyz.jphil.windows_console_set_unicode_output`.
 
 ## Safety Features
 

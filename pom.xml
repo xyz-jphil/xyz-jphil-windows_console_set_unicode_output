@@ -48,6 +48,9 @@
                 <version>3.3.0</version>
                 <configuration>
                     <archive>
+                        <manifest>
+                            <mainClass>xyz.jphil.windows_console_set_unicode_output.WindowsConsoleSetUnicodeOutput</mainClass>
+                        </manifest>
                         <manifestEntries>
                             <Enable-Native-Access>ALL-UNNAMED</Enable-Native-Access> <!-- documentation says no other value is allowed here -->
                         </manifestEntries>
