@@ -1,0 +1,5 @@
+﻿Current output code page: 850
+Current input code page: 850
+Successfully set output code page to: 65001
+Successfully set input code page to: 65001
+System.out (now fixed): ­ƒÜÇ ├▒ ├╝ õ©¡µûç ­ƒÄë

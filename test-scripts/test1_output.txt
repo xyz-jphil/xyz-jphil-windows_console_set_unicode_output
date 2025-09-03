@@ -1,0 +1,5 @@
+﻿=== Test 1: Baseline (no changes) ===
+System default charset: UTF-8
+file.encoding property: UTF-8
+Unicode test: ? ± ³ ?? ?
+More Unicode: ÓßÔÒõÕ þ±³▀ ®«Ö ???

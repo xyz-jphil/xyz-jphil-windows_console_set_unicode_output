@@ -1,0 +1,6 @@
+﻿=== Test 2: Reset System.out to UTF-8 (no native changes) ===
+BEFORE reset:
+  Unicode test: ? ± ³ ?? ?
+AFTER reset to UTF-8:
+  Unicode test: ­ƒÜÇ ├▒ ├╝ õ©¡µûç ­ƒÄë
+  More Unicode: ├á├í├ó├ú├ñ├Ñ ├º├▒├╝├ƒ ┬®┬«Ôäó ÔöîÔöÇÔöÉ

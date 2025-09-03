@@ -1,0 +1,10 @@
+﻿=== Test 4: Set file.encoding property + reset (no native changes) ===
+BEFORE changes:
+  file.encoding: UTF-8
+  Unicode test: ? ± ³ ?? ?
+AFTER setting file.encoding=UTF-8:
+  file.encoding: UTF-8
+  Unicode test: ? ± ³ ?? ?
+AFTER also resetting System.out:
+  Unicode test: ­ƒÜÇ ├▒ ├╝ õ©¡µûç ­ƒÄë
+  More Unicode: ├á├í├ó├ú├ñ├Ñ ├º├▒├╝├ƒ ┬®┬«Ôäó ÔöîÔöÇÔöÉ

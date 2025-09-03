@@ -1,0 +1,8 @@
+﻿=== Test 3: Reset System.out to CP65001 (no native changes) ===
+BEFORE reset:
+  Unicode test: ? ± ³ ?? ?
+Failed to get CP65001 charset: CP65001
+Falling back to UTF-8...
+AFTER reset to UTF-8:
+  Unicode test: ­ƒÜÇ ├▒ ├╝ õ©¡µûç ­ƒÄë
+  More Unicode: ├á├í├ó├ú├ñ├Ñ ├º├▒├╝├ƒ ┬®┬«Ôäó ÔöîÔöÇÔöÉ
